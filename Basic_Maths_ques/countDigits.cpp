@@ -7,10 +7,7 @@ int countDigits(int n){
     // Initialize a counter variable to store the count of digits.
     int cnt = 0;
     
-    while(n > 0){
-        cnt = cnt + 1;
-        n = n / 10;
-    }
+     int cnt = (int)(log10(n)+1);
     return cnt;
 }
 
@@ -27,6 +24,7 @@ int main() {
 /*OPTIMAL SOLUTION  T(n)= 0(1)
 
 int countDigits(int n){
+
 
     // Initialize a variable 'cnt' to
     // store the count of digits.
